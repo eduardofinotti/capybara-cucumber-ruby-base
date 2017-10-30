@@ -1,4 +1,4 @@
-@login_admin @javascript
+@login_travels_admin @javascript
 Feature: Login as an admin user
 In order to acess de Administrator panel
 As an Admin user

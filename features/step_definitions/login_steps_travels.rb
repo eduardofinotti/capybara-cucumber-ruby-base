@@ -1,11 +1,12 @@
 Given("I am on the login administrator page") do
-  visit 'admin'
+  visit '/admin'
 end
 
 When("I enter the acess data for an administrator user") do
-  pending # Write code here that turns the phrase above into concrete actions
+  fill_in 'email', with: 'admin@phptravels.com'
+  fill_in 'password', with: 'demoadmin'
 end
 
 Then("I should be able to access the administrator panel") do
-  pending # Write code here that turns the phrase above into concrete actions
+  # Não consegui mais acessar o 
 end
