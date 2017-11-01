@@ -43,7 +43,6 @@ Then("I see the statements Summary Receivable page") do
 end
 
 Then("I see the {string}") do |string|
-  #binding.pry
   expect(page).to have_content(string)
   #expect(page).to have_css('#purchaseItemTotal0', text: string)
   #expect(page).to have_css('#purchaseItemTotal0', visible: false)

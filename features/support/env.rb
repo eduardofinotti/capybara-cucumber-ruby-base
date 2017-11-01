@@ -11,17 +11,9 @@ Capybara.register_driver :selenium do |app|
     options: Selenium::WebDriver::Chrome::Options.new(args: ['start-maximized', 'disable-gpu']))
 end
 
-
 Capybara.default_driver = :selenium
 Capybara.default_max_wait_time = 30
 
 Capybara.app_host = "https://app.contaazul.com"
-
-# require 'rbconfig'
-# require 'cucumber/formatter/unicode'
-
-# require 'capybara'
-# require 'capybara/dsl'
-# require "capybara/cucumber"
 
 # https://robots.thoughtbot.com/headless-feature-specs-with-chrome
