@@ -23,10 +23,31 @@ Given("I insert {string}, {string}, {int}, {string}") do |string, string2, int, 
   new_purchase_page.purchase_itens.purchase_item_price.set string3
 end
 
+Given("I insert a set of itens") do
+  (0..2).each do |i|
+     find("#purchaseItem#{i}").set "Item 0#{i}"
+     find("#purchaseItemDescription#{i}").set "Item 0#{i} - Description"
+     find("#purchaseItemQuantity#{i}").set "#{i+1}"
+     find("#purchaseItemPrice#{i}").set "#{i+120}"
+  end
+
+end
+
+Given("I save the purchase") do
+  new_purchase_page.save_purchase_button.click
+end
+
+Then("I see the statements Summary Receivable page") do
+  expect(page).to have_content("728,00")
+  #expect(page).to have_selector(:id, 'statements_summary_receivable', text: "728,00")
+end
+
 Then("I see the {string}") do |string|
-  binding.pry
+  #binding.pry
+  expect(page).to have_content(string)
   #expect(page).to have_css('#purchaseItemTotal0', text: string)
-  expect(page).to have_css('#purchaseItemTotal0', visible: false)
+  #expect(page).to have_css('#purchaseItemTotal0', visible: false)
+  #expect(page).to have_selector(:css, '#purchaseItemTotal0', text: string)
   #expect(page).to have_selector(:id, 'purchaseItemTotal0', text: string)
   #expect(new_purchase_page.purchase_itens.purchase_item_total.text).to have_content(string)
 end

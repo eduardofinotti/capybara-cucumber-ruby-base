@@ -5,6 +5,8 @@ class NewPurchasePage < SitePrism::Page
   element :purchase_negotiator, '#purchaseNegotiator'
   element :purchase_number, '#purchaseNumber'
   element :purchase_category, '#purchaseCategory'
+  element :save_purchase_button, '#savePurchase'
+  element :statements_summary_receivable, '#statementsSummaryReceivable'
 
   class PurchaseItens < SitePrism::Section
     element :purchase_item, '#purchaseItem0'
