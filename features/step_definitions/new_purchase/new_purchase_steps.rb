@@ -35,6 +35,7 @@ end
 
 Given("I save the purchase") do
   new_purchase_page.save_purchase_button.click
+  #find(:xpath, '//*[@id="savePurchase"]').click
 end
 
 Then("I see the statements Summary Receivable page") do
