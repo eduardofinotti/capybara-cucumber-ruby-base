@@ -6,7 +6,7 @@ Given("I am on the contaazul login page") do
 end
 
 When("I enter the acess data for contaazul") do
-  login_page.username_login.set 'barbaracabral@gmail.com'
+  login_page.username_login.set 'gbopoeta@gmail.com'
   login_page.password_login.set 'fr$$d0m83'
   login_page.loginSubmit.click
 end
