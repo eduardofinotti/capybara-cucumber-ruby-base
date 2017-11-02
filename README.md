@@ -65,25 +65,25 @@ Execute o seguinte comando dentro da raiz do projeto:
 bundle exec cucumber features
 ```
 
-### Executando tags###
+### Executando tags ###
 Execute o seguinte comando dentro da raiz do projeto:
 ```shell
 bundle exec cucumber --tags @login_conta_azul @nova_compra
 ```
 
-### Executando os testes usando Firefox###
+### Executando os testes usando Firefox ###
 Execute o seguinte comando dentro da raiz do projeto:
 ```shell
 bundle exec cucumber -p firefox
 ```
 
-### Executando os testes usando Poltergeist###
+### Executando os testes usando Poltergeist ###
 Execute o seguinte comando dentro da raiz do projeto:
 ```shell
 bundle exec cucumber -p poltergeist
 ```
 
-### Gerando relatório HTML###
+### Gerando relatório HTML ###
 Execute o seguinte comando dentro da raiz do projeto:
 ```shell
 bundle exec cucumber -p html_report
