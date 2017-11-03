@@ -59,8 +59,8 @@ bundle install
     * [phantomjs](http://phantomjs.org/)*
     
 _Obs: Phantomjs no ubuntu:_ 
-````shell
-$ sudo apt-get install phantomjs
+```shell
+sudo apt-get install phantomjs
 ```
 
 ### Executando os testes usando o Chrome (default) ###
