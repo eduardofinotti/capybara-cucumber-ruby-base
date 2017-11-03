@@ -58,10 +58,10 @@ bundle install
     * [chromedriver](https://christopher.su/2015/selenium-chromedriver-ubuntu/ )
     * [phantomjs](http://phantomjs.org/)*
     
-*Obs: Phantomjs no ubuntu: 
+_Obs: Phantomjs no ubuntu:_ 
 ````shell
 $ sudo apt-get install phantomjs
-``` 
+```
 
 ### Executando os testes usando o Chrome (default) ###
 Execute o seguinte comando dentro da raiz do projeto:
