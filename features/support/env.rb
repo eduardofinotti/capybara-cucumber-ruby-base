@@ -8,7 +8,7 @@ require 'capybara/poltergeist'
 Capybara.default_driver = :selenium
 Capybara.default_max_wait_time = 30
 
-Capybara.app_host = "https://app.contaazul.com"
+Capybara.app_host = "http://www.bstqb.org.br/"
 
 BROWSER = ENV['BROWSER']
 

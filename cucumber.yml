@@ -1,15 +1,9 @@
 ##YAML Template
 ---
-<<<<<<< HEAD
+
 default: -p chrome 
 html_report: --format progress --format html --out=features_report.html
 firefox: BROWSER=firefox
 chrome: BROWSER=chrome
 poltergeist: BROWSER=poltergeist
-=======
-default: -p chrome
-html_report: --format progress --format html --out=features_report.html
-firefox: BROWSER=firefox
-chrome: BROWSER=chrome
-poltergeist: BROWSER=poltergeist
->>>>>>> 0ca5d43dda6cf2f6c085c3e4ea3cfa82976e80c6
+
